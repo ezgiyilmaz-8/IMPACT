@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <section id="topbar" class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"></i><a href="mailto:contact@example.com">contact@example.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <i class="bi bi-twitter p-2"></i>
+                <i class="bi bi-facebook p-2"></i>
+                <i class="bi bi-instagram p-2"></i>
+                <i class="bi bi-linkedin p-2"></i>
+            </div>
+        </div>
+    </section>
+    
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h1>Impact<span>.</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                    <span class="navbar-toggler-icon"><i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fcs" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fcs" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fcs" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fcs" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fcs" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fcs" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fcs" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Drop Down
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fcs" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcs" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcs" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcs" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcs" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcs" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fcs" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Drop Down
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                            <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>  
+       
+    <section class="welcome-section">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <h2>Welcome to <span>Impact</span></h2>
+                    <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="btn-watch-video d-flex align-items-center">
+                        <i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                </div>
+            </div>
+        </div>
+        <div class="icon-boxes position-relative pb-5">
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <i class="bi bi-easel"></i>
+                            </div>
+                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <i class="bi bi-gem"></i>
+                            </div>
+                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="icon-box">
+                            <div class="icon">
+                                <i class="bi bi-command"></i>
+                            </div>
+                            <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- About Part --->
+    <section class="about-section pb-5" id="about">
+        <div class="container">
+            <div class="about-title text-center pb-5">
+                <h2>About Us</h2>
+                <p> Aperiam dolorum et et wuia molestias qui eveniet
+                    numquam nihil porro incidunt dolores placeat sunt
+                    id nobis omnis tiledo stran delop
+                </p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-12 col-lg-6">
+                    <div class="about-left-part">
+                        <h3>Voluptatem dignissimos provident quasi corporis</h3>
+                        <img class="img-fluid" src="img/about.jpeg" alt="">
+                        <p class="pt-4"> Ut fugiat ut sunt quia veniam. Voluptate perferendis
+                            perspiciatis quod nisi et. Placeat debitis quia
+                            recusandae odit et consequatur voluptatem.
+                            Dignissimos pariatur consectetur fugiat voluptas ea.
+                        </p>
+                        <p> Temporibus nihil enim deserunt sed ea. Provident sit
+                            expedita aut cupiditate nihil vitae quo officia vel.
+                            Blanditiis eligendi possimus et in cum. Quidem eos
+                            ut sint rem veniam qui. Ut ut repellendus nobis
+                            tempore doloribus debitis explicabo similique sit.
+                            Accusantium sed ut omnis beatae neque deleniti repellendus.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-right-part ps-lg-5">
+                        <p class="fst-italic"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="ps-0">
+                            <li class="d-flex pb-2"><i class="bi bi-check-circle-fill me-2"></i><span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li class="d-flex pb-2"><i class="bi bi-check-circle-fill me-2"></i><span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                            <li class="d-flex pb-2"><i class="bi bi-check-circle-fill me-2"></i><span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                        </ul>
+                        <p class="pb-2"> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/about-2.jpeg" alt="">
+                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="about-play-btn"></a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Clients Part --->
+    <section class="clients-section">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" >
+                    <div>
+                        <img class="img-fluid" src="img/client-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" >
+                    <div>
+                        <img class="img-fluid" src="img/client-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-none d-sm-block" >
+                    <div>
+                        <img class="img-fluid" src="img/client-3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-none d-md-block" >
+                    <div>
+                        <img class="img-fluid" src="img/client-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-none d-lg-block">
+                    <div>
+                        <img class="img-fluid" src="img/client-5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-none d-lg-block">
+                    <div>
+                        <img class="img-fluid" src="img/client-6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Count Part --->
+    <section class="count-section">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img src="img/stats-img.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="count d-flex align-items-center">
+                        <span>232</span>
+                        <p>
+                        <strong>Happy Clients</strong>
+                        consequuntur quae diredo para mesta
+                        </p>
+                    </div>
+                    <div class="count d-flex align-items-center">
+                        <span>521</span>
+                        <p>
+                        <strong>Projects</strong>
+                        adipisci atque cum quia aut
+                        </p>
+                    </div>
+                    <div class="count d-flex align-items-center">
+                        <span>453</span>
+                        <p>
+                        <strong>Hours Of Support</strong>
+                        aut commodi quaerat
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--- Call to Action Part --->
+    <section class="action-section">
+        <div class="container">
+            <div class="play-button">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="action-play-btn"></a>
+            </div>
+            <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+            <div class="call-button">
+                <a class="call-btn" href="#">Call To Action</a>
+            </div>
+        </div>
+    </section>
+
+    <!--- Services Part --->
+    <section class="service-section" id="services">
+        <div class="container">
+            <div class="service-title">
+                <h2>Our Services</h2>
+                <p>Aperiam dolorum et et wuia molestias qui eveniet
+                    numquam nihil porro incidunt dolores placeat sunt
+                    id nobis omnis tiledo stran delop
+                </p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Nesciunt Mete</h3>
+                        <p>Provident nihil minus qui consequatur non omnis maiores.
+                            Eos accusantium minus dolores iure perferendis tempore
+                            et consequatur.
+                        </p>
+                        <a href="#">Read more<i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16">
+                                <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Eosle Commodi</h3>
+                        <p>Ut autem aut autem non a. Sint sint sit facilis nam
+                            iusto sint. Libero corrupti neque eum hic non ut
+                            nesciunt dolorem.
+                        </p>
+                        <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                            </svg>
+                        </div>
+                        <h3>Ledo Markt</h3>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
+                            Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+                        </p>
+                        <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bounding-box-circles" viewBox="0 0 16 16">
+                                <path d="M2 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM0 2a2 2 0 0 1 3.937-.5h8.126A2 2 0 1 1 14.5 3.937v8.126a2 2 0 1 1-2.437 2.437H3.937A2 2 0 1 1 1.5 12.063V3.937A2 2 0 0 1 0 2zm2.5 1.937v8.126c.703.18 1.256.734 1.437 1.437h8.126a2.004 2.004 0 0 1 1.437-1.437V3.937A2.004 2.004 0 0 1 12.063 2.5H3.937A2.004 2.004 0 0 1 2.5 3.937zM14 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM2 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Asperiores Commodit</h3>
+                        <p>Non et temporibus minus omnis sed dolor esse consequatur.
+                            Cupiditate sed error ea fuga sit provident adipisci neque.
+                        </p>
+                        <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-week" viewBox="0 0 16 16">
+                                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                <path d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Velit Doloremque</h3>
+                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis
+                            ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
+                        </p>
+                        <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Dolori Architecto</h3>
+                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque
+                            aut neque non et debitis iure. Corrupti recusandae ducimus enim.
+                        </p>
+                        <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Testimonials Part --->
+    <section class="testim-section">
+        <div class="container">
+            <div class="testim-title">
+                <h2>Testimonials</h2>
+                <p>Voluptatem quibusdam ut ullam perferendis repellat non
+                    ut consequuntur est eveniet deleniti fignissimos eos quam
+                </p>
+            </div> 
+            <div class="row">
+                <div class="col-xl-4 col-lg-12">
+                    <div class="testim-card">
+                        <div class="testim-content d-flex">
+                            <div class="testim-img">
+                                <img src="img/testimonials-1.jpeg" alt="">
+                            </div>
+                            <div class="testim-card-title">
+                                <h3>Saul Goodman</h3>
+                                <h4>Ceo & Founder</h4>
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fst-italic"> 
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            Proin iaculis purus consequat sem cure digni ssim donec
+                            porttitora entum suscipit rhoncus. Accusantium quam,
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                            risus at semper. 
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 d-none d-xl-block">
+                    <div class="testim-card">
+                        <div class="testim-content d-flex">
+                            <div class="testim-img">
+                                <img src="img/testimonials-4.jpeg" alt="">
+                            </div>
+                            <div class="testim-card-title">
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fst-italic"> 
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            Fugiat enim eram quae cillum dolore dolor amet nulla
+                            culpa multos export minim fugiat minim velit minim dolor
+                            enim duis veniam ipsum anim magna sunt elit fore quem dolore. 
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 d-none d-xl-block">
+                    <div class="testim-card">
+                        <div class="testim-content d-flex">
+                            <div class="testim-img">
+                                <img src="img/testimonials-5.jpeg" alt="">
+                            </div>
+                            <div class="testim-card-title">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fst-italic"> 
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            Quis quorum aliqua sint quem legam fore sunt eram irure
+                            aliqua veniam tempor noster veniam enim culpa labore duis
+                            sunt culpa nulla illum cillum fugiat legam esse veniam fore.
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Portfolio Part --->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-title">
+                <h2>Portfolio</h2>
+                <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi
+                   llum nostrum enim velit qui ut et autem uia reprehenderit
+                   sunt deleniti
+                </p>
+            </div>
+            <div class="portfolio-menu">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+                        <button class="nav-link" id="nav-app-tab" data-bs-toggle="tab" data-bs-target="#nav-app" type="button" role="tab" aria-controls="nav-app" aria-selected="false">App</button>
+                        <button class="nav-link" id="nav-product-tab" data-bs-toggle="tab" data-bs-target="#nav-product" type="button" role="tab" aria-controls="nav-product" aria-selected="false">Product</button>
+                        <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                        <button class="nav-link" id="nav-books-tab" data-bs-toggle="tab" data-bs-target="#nav-books" type="button" role="tab" aria-controls="nav-books" aria-selected="false">Books</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 1</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6"">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 1</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-app-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 1</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/app-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">App 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6"">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/product-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Product 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-branding" role="tabpanel" aria-labelledby="nav-branding-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/branding-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Branding 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-books" role="tabpanel" aria-labelledby="nav-books-tab" tabindex="0">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-1.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 1</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-2.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 2</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/books-3.jpeg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Books 3</h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Our Team Part --->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="team-title">
+                <h2>Our Team</h2>
+                <p>Nulla dolorum nulla nesciunt rerum facere sed ut
+                   inventore quam porro nihil id ratione ea sunt
+                   quis dolorem dolore earum
+                </p>
+            </div> 
+            <div class="row gy-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="team-cards card">
+                        <div class="card-image">
+                            <img src="img/team-1.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title m-0">Walter White</h4>
+                            <span>Web Development</span>
+                            <div class="social-icons d-flex align-items-center justify-content-around mt-4">
+                                <a href="https://twitter.com/i/flow/login" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://tr-tr.facebook.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://tr.linkedin.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="team-cards card">
+                        <div class="card-image">
+                            <img src="img/team-2.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title m-0">Sarah Jhinson</h4>
+                            <span>Marketing</span>
+                            <div class="social-icons d-flex align-items-center justify-content-around mt-4">
+                                <a href="https://twitter.com/i/flow/login" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://tr-tr.facebook.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://tr.linkedin.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="team-cards card">
+                        <div class="card-image">
+                            <img src="img/team-3.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title m-0">William Anderson</h4>
+                            <span>Content</span>
+                            <div class="social-icons d-flex align-items-center justify-content-around mt-4">
+                                <a href="https://twitter.com/i/flow/login" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://tr-tr.facebook.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://tr.linkedin.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="team-cards card">
+                        <div class="card-image">
+                            <img src="img/team-4.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title m-0">Amanda Jepson</h4>
+                            <span>Accountant</span>
+                            <div class="social-icons d-flex align-items-center justify-content-around mt-4">
+                                <a href="https://twitter.com/i/flow/login" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://tr-tr.facebook.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://tr.linkedin.com/" class="d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!--- Pricing Part --->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-title">
+                <h2>Pricing</h2>
+                <p>Aperiam dolorum et et wuia molestias qui eveniet
+                   numquam nihil porro incidunt dolores placeat
+                   sunt id nobis omnis tiledo stran delop
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h3>Free Plan</h3>
+                        <div class="pricing-icon">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <h4><sup>$</sup>0<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i>Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check"></i>Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check"></i>Nulla at volutpat diam uteera</li>
+                            <li class="cross"><i class="bi bi-x"></i>
+                                <span>Pharetra massa massa ultricies</span>
+                            </li>
+                            <li class="cross"><i class="bi bi-x"></i>
+                                <span>Massa ultricies mi quis hendrerit</span>
+                            </li>
+                        </ul>
+                        <div class="buy-button">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card business-plan">
+                        <h3>Business Plan</h3>
+                        <div class="pricing-icon">
+                            <i class="bi bi-airplane"></i>
+                        </div>
+                        <h4><sup>$</sup>29<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i>Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check"></i>Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check"></i>Nulla at volutpat diam uteera</li>
+                            <li><i class="bi bi-check"></i>Pharetra massa massa ultricies</li>
+                            <li><i class="bi bi-check"></i>Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <div class="buy-button">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h3>Developer Plan</h3>
+                        <div class="pricing-icon">
+                            <i class="bi bi-send"></i>
+                        </div>
+                        <h4><sup>$</sup>49<span> / month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i>Quam adipiscing vitae proin</li>
+                            <li><i class="bi bi-check"></i>Nec feugiat nisl pretium</li>
+                            <li><i class="bi bi-check"></i>Nulla at volutpat diam uteera</li>
+                            <li><i class="bi bi-check"></i>Pharetra massa massa ultricies</li>
+                            <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <div class="buy-button">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!--- Frequently Asked Part --->
+    <section class="freq-section">
+        <div class="container">
+            <div class="row gap-5">
+                <div class="col-lg-4 ps-5">
+                    <div class="substance px-4">
+                        <h3>Frequently Asked
+                        <strong>Question</strong>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div> 
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <span>1.</span>
+                                Non consectetur a erat nam at lectus urna duis? 
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                    laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                    rhoncus dolor purus non.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <span>2.</span>
+                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?  
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.
+                                    Id interdum velit laoreet id donec ultrices. Fringilla phasellus
+                                    faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                                    ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <span>3.</span>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? 
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                    Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                    amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus
+                                    urna duis convallis convallis tellus. Urna molestie at elementum eu
+                                    facilisis sed odio morbi quis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <span>4.</span>
+                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? 
+                            </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.
+                                    Id interdum velit laoreet id donec ultrices. Fringilla phasellus
+                                    faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                                    ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <span>5.</span>
+                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat? 
+                            </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. 
+                                    Dignissim suspendissein est ante in. Nunc vel risus commodo viverra maecenas
+                                    accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                                    Purus gravida quis blandit turpis cursus in.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Recent Blog Posts Part --->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="blog-title">
+                <h2>Recent Blog Posts</h2>
+                <p> Consequatur libero assumenda est voluptatem est quidem
+                    illum et officia imilique qui vel architecto accusamus
+                    fugit aut qui distinctio
+                </p>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card card">
+                        <div class="blog-card-img">
+                            <img src="img/blog-1.jpeg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4>Politics</h4>
+                            <h2 class="card-title">Dolorum optio tempore voluptas dignissimos</h2>
+                            <div class="blog-card-content d-flex align-items-center">
+                                <img src="img/blog-author.jpeg" alt="">
+                                <div class="blog-card-text">
+                                    <h3>Maria Doe</h3>
+                                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card card">
+                        <div class="blog-card-img">
+                            <img src="img/blog-2.jpeg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4>Sports</h4>
+                            <h2 class="card-title">Nisi magni odit consequatur autem nulla dolorem</h2>
+                            <div class="blog-card-content d-flex align-items-center">
+                                <img src="img/blog-author-2.jpeg" alt="">
+                                <div class="blog-card-text">
+                                    <h3>Allisa Mayer</h3>
+                                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="blog-card card">
+                        <div class="blog-card-img">
+                            <img src="img/blog-3.jpeg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h4>Entertainment</h4>
+                            <h2 class="card-title">Possimus soluta ut id suscipit ea ut in quo quia et soluta</h2>
+                            <div class="blog-card-content d-flex align-items-center">
+                                <img src="img/blog-author-3.jpeg" alt="">
+                                <div class="blog-card-text">
+                                    <h3>Mark Dower</h3>
+                                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Contact Part --->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-title">
+                <h2>Contact</h2>
+                <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam
+                   porro nihil id ratione ea sunt quis dolorem dolore earum
+                </p>
+            </div> 
+            <div class="row">
+                <div class="col-lg-4 col-md-12 pe-0 left-col">
+                    <div class="information-part d-flex flex-column align-items-center justify-content-center">
+                        <div class="info-row d-flex flex-row mb-3">
+                            <div class="info-icon d-flex align-items-center">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="info-text ps-3">
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="info-row d-flex flex-row mb-3">
+                            <div class="info-icon d-flex align-items-center">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="info-text ps-3">
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-row d-flex flex-row mb-3">
+                            <div class="info-icon d-flex align-items-center">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <div class="info-text ps-3">
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55</p>
+                            </div>
+                        </div>
+                        <div class="info-row d-flex flex-row">
+                            <div class="info-icon d-flex align-items-center">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="info-text ps-3">
+                                <h4>Open Hours:</h4>
+                                <p>Mon-Sat: 11AM - 23PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 ps-0 right-col">
+                    <form>
+                        <div class="row pb-4">
+                            <div class="col-6">
+                                <input type="text" placeholder="Your Name" class="form-control" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" placeholder="Your Email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-12">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-12">
+                                <textarea name="message" placeholder="Message" rows="7" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="contact-send-button">
+                                <button class="send-btn"><a href="#">Send Message</a></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Footer --->
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="footer-text col-lg-5 pt-3">
+                    <span>Impact</span>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra.
+                        Justo eget nada terra videa magna derita valies darta donna
+                        mare fermentum iaculis eu non diam phasellus.
+                    </p>
+                    <div class="social-links d-flex">
+                        <a href="https://twitter.com/i/flow/login" class="d-flex align-items-center justify-content-center me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="https://tr-tr.facebook.com/" class="d-flex align-items-center justify-content-center me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tr.linkedin.com/" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-link col-lg-2 col-md-6 pt-4">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link col-lg-2 col-md-6 pt-4">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-us col-lg-3 pt-4">
+                    <h4>Contact Us</h4>
+                    <p>A108 Adam Street <br>
+                        New York, NY 535022 <br>
+                        United States <br>
+                        <br>
+                        <strong>Phone:</strong>
+                        +1 5589 55488 55
+                        <br>
+                        <strong>Email:</strong>
+                        info@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="container pt-5 pb-5">
+                <div class="copyright text-center">
+                    © Copyright <strong><span>Impact</span></strong>
+                    . All Rights Reserved
+                </div>
+                <div class="designed text-center">
+                    Designed by <a href="#">
+                    BootstrapMade </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="chevron" href="#topbar">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
